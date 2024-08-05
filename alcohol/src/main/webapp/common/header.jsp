@@ -1,14 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="/resources/style/temp.css">
-<title>Insert title here</title>
-</head>
-<body>
-    <div id="wrap">
+ <div id="wrap">
         <header class="header">
             <div class="logo"></div>
             <div class="auth-links">
@@ -46,7 +38,7 @@
                     <ul class="submenu-item-4">
                         <li><a href="#">문의사항</a></li>
                         <li><a href="#">공지사항</a></li>
-                        <li><a href="/getComBoardList.do">커뮤니티</a></li>
+                        <li><a href="#">커뮤니티</a></li>
                     </ul>
                 </li>
             </ul>

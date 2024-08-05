@@ -10,7 +10,4 @@
 		        <b>COPYRIGHT 2021@ HONSULLU COMPANY</b>
 		        </p>
 		    </div>    
-		</footer>
-    </div>
-</body>
-</html>
+</footer>
