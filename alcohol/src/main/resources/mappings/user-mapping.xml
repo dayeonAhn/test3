@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserDAO">
+
+	<resultMap id="userResult" type="user">
+		<result property="idx" column="IDX" />
+		<result property="name" column="NAME" />
+		<result property="id" column="ID" />
+		<result property="pwd" column="PWD" />
+		<result property="phone" column="PHONE" />
+		<result property="address" column="ADDRESS" />
+		<result property="email" column="EMAIL" />
+		
+	</resultMap> <!-- 이름이 불일치해도 이렇게 비교하게 만들 수 있다 -->
+
+
+	<!--  유저 등록== 회원가입 -->
+	<insert id="insertUser" parameterType="user"> <!-- parameterType 은 생략 가능 -->
+	<!-- 조건절에 비교연산을 식으로 인식하기 위해서 사용 한다 -->
+	<![CDATA[ 
+	
+		insert into users (idx, name, id, pwd, phone, address, email) 
+		values ((select nvl(max(idx),0) + 1 from users), #{name}, #{id}, #{pwd}, #{phone}, #{address}, #{email})
+		
+		]]>
+		
+	</insert>
+	
+	
+	
+	<!-- 회원정보 수정 -->
+	<update id="updateUser">
+		update users set pwd=#{pwd}, phone=#{phone}, email=#{email} where idx=${idx };
+	</update>
+	
+	<!-- 회원 탈퇴 -->
+	<delete id="deleteUser">
+		delete users where idx=#{idx };
+	
+	</delete>
+	
+	<!-- id/pwd 조회 -->
+	<select id="getUser" resultType="user">
+		select * from users where idx=#{idx};
+	</select>
+</mapper>

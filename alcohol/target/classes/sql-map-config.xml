@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+
+<configuration>
+
+
+<!-- properties 파일 설정 -->
+	<properties resource="database.properties" />
+	
+	
+<!-- alias 설정	 -->
+	<typeAliases>
+		<typeAlias alias="user" type="com.al.biz.user.UserVO"></typeAlias> <!-- Vo 위치 정하는거임 -->
+		<typeAlias alias="comboard" type="com.al.biz.board.ComBoardVo"/>
+	</typeAliases>
+	
+	
+	
+	
+	
+<!-- dataSource 설정 -->	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driver}"/>
+				<property name="url" value="${jdbc.url}"/>
+				<property name="username" value="${jdbc.username}"/>
+				<property name="password" value="${jdbc.password}"/>
+			</dataSource>
+		</environment>
+	</environments>
+	
+	
+<!-- SQL Mapper 설정	디비 연결할때 resource의 경로파일을 통해 db데이터를 쓸 수 있다 ...2개를 하나로 묶는 작업 -->
+	<mappers>
+		<mapper resource="mappings/user-mapping.xml"></mapper>
+		<mapper resource="mappings/comboard-mapping.xml"/>
+	</mappers>
+	
+	
+	
+</configuration>
+
+
