@@ -10,7 +10,7 @@
     <script src="/resources/script/js.js"></script>
     
     <script>
-        // JavaScript function to toggle image source
+        // JavaScript function to toggle image    source
         function toggleImage(imgElement) {
             if (imgElement.src.includes("heart1.png")) {
                 imgElement.src = "./resources/images/heart2.png";
