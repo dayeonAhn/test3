@@ -59,5 +59,283 @@ input[class*="join"]{
 }
 
 
+/* ---채윤---*/
+header.header {
+    width: 1280px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    height: 140px;
+    background-image: url('/resources/images/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.auth-links {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.auth-links a {
+    color: #767676;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.menu img {
+	width : 10px;
+	height : 10px;
+}
+
+.menu ul ul {
+  display: none;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.menu ul {
+  background-color: #F4F0C1;
+  color: white;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu ul li a {
+  display: block;
+  font-size: 15px;
+  padding: 10px 30px;
+  color: #767676;
+  text-decoration: none;
+}
+
+.menu ul li:hover > a {
+  background-color: #F4F0C1;
+  opacity : 0.8;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.menu ul li:hover ul {
+  display: block;
+}
+
+.menu ul li ul li {
+  display: block;
+}
+.content {
+    margin-bottom: 60px; /* 배너와 best5 사이의 여백 추가 */
+}
+.best5-section {
+    margin-top: 60px; 
+    margin-bottom: 40px;
+    background-color: #FFF8E0;
+}
+
+.best5-section h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #C4DFAA;
+    text-align: center;
+}
+
+.best5-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.best5-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 180px; /* 카드의 너비 조정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best5-img {
+    width: 100%;
+    height: 180px; /* 카드의 높이를 정사각형으로 설정 */
+    object-fit: cover; /* 이미지가 카드 영역에 맞게 잘리도록 설정 */
+    border: none; /* 경계선 제거 */
+}
+
+.best5-info {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #C4DFAA; /* 배경색 변경 */
+    border-radius: 0 0 10px 10px; /* 하단만 둥글게 설정 */
+    margin-top: 10px; /* 이미지와 정보 간의 간격 추가 */
+    border: none; /* 경계선 제거 */
+}
+
+.best5-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 3px;
+    color: #000; /* 텍스트 색상 설정 */
+}
+
+.best5-price {
+    font-size: 14px;
+    color: #000; /* 텍스트 색상 설정 */
+}
+
+
+
+.instagram-section {
+    width: 1280px;
+    height: 200px;
+    background-color: #9CC6AE;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 3px auto; /* instagram-section의 여백 추가 */
+}
+
+.instagram-section p {
+	font-size:20px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.insta-button {
+    background-color: #ffffff;
+    color: #9CC6AE;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.insta-button:hover {
+    background-color: #e0e0e0;
+    color: #7b9a8d;
+}
+
+.recommendations-section {
+    width: 1280px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 40px auto; /* 이달의 추천과 footer 사이의 여백 추가 */
+    border-radius: 10px;
+}
+
+.recommendations-section h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: #73A9AD; /* 색상 변경 */
+    margin: 20px;
+}
+
+.recommendation-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 아이템 간격 설정 */
+    justify-content: center;
+}
+
+.recommendation {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #73A9AD; /* border 색상 변경 */
+    width: 220px; /* 박스 너비 설정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; /* 패딩 증가 */
+    overflow: hidden; /* 이미지가 카드 영역을 넘어가지 않도록 설정 */
+    margin:30px;
+}
+
+.recommendation-img {
+    width: 100%; /* 박스 너비에 맞게 이미지 크기 조정 */
+    height: 180px; /* 최대 높이 설정 */
+    object-fit: cover; /* 이미지가 박스에 맞게 잘리도록 설정 */
+    border-radius: 10px; /* 사진의 테두리 둥글게 설정 */
+}
+
+.recommendation-info {
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.recommendation-name {
+    font-size: 18px;
+    font-weight: bold; /* 이름을 볼드체로 설정 */
+    margin: 5px 0;
+    color: #73A9AD; /* 글씨 색상 설정 */
+}
+
+.recommendation-tags {
+    color: #73A9AD;
+    margin: 5px 0 0;
+}
+
+footer{
+    width: 100%; background-color: #fff;
+}
+footer div {
+    display: flex;
+}
+
+footer div .imageFoot{
+    width: 25%;
+}
+footer p {
+    font-size: 16px; font-weight: 500; padding: 30px 10px 0; 
+}
+footer p b{
+    margin-top: 10px; display: block; font-size: 14px;
+}
+
+/* ---채윤---*/
+
 
 
