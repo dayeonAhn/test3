@@ -1,56 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="/resources/style/temp.css">
-<title>Insert title here</title>
-</head>
-<body>
-    <div id="wrap">
-        <header class="header">
-            <div class="logo"></div>
-            <div class="auth-links">
-                <a class="login" href="/member/Login.jsp">로그인</a>
-                <a class="signup" href="/member/joinMember.jsp">회원가입</a>
-            </div>
-        </header>
-        <div class="menu">
-            <ul>
-	            <li>
-					<img src="/resources/images/icon.png"/>            	
-	            </li>	
-                <li class="menu-item menu-item-1">
-                    <a href="#">혼술 장터</a>
-                    <ul class="submenu-item-1">
-                        <li><a href="#">맥주</a></li>
-                        <li><a href="#">막걸리</a></li>
-                        <li><a href="#">와인</a></li>
-                        <li><a href="#">증류주</a></li>
-                        <li><a href="#">사케</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-2">
-                    <a href="#">혼술 취향</a>
-                    <ul class="submenu-item-2">
-                        <li><a href="#">혼술 걸음마</a></li>
-                        <li><a href="#">술BTI</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-3">
-                    <a href="#">혼술 알려주소</a>
-                </li>
-                <li class="menu-item menu-item-4">
-                    <a href="#">혼술 대화방</a>
-                    <ul class="submenu-item-4">
-                        <li><a href="#">문의사항</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">커뮤니티</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<jsp:include page="/common/header.jsp"></jsp:include>
         <div class="content">
             <img src="../resources/images/wine.jpg" alt="Wine" width="1280" height="400"/>
         </div>
@@ -121,17 +71,4 @@
 		        </div>
             </div>
         </div>
-        <footer>
-		    <div id="wrap">
-		        <div class="imageFoot"><img src="/resources/images/Logo.png" alt="로고사진"></div>
-		        <p>혼술러 주식회사  대표이사 우파루파본사 <br>
-		        자랑스러운 인천광역시 한림읍 금능농공길 228 동호 38빌딩 6층호스팅 제공자 (주)아임웹 사업자등록번호 616-86-27415 통신판매업신고번호 제 2020-디버그한림-0101 호고객센터 02-1234-4321 drinkDebug@jhonsullu.co.kr <br>
-		
-		        경고 : 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. 임신 중 음주는 기형아 출생 위험을 높입니다. <br>
-		        <b>COPYRIGHT 2021@ HONSULLU COMPANY</b>
-		        </p>
-		    </div>    
-		</footer>
-    </div>
-</body>
-</html>
+<jsp:include page="/common/footer.jsp"></jsp:include>
