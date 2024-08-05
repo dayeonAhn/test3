@@ -388,6 +388,79 @@ body {
 
 
 
+		#insertBoard {
+            width: 1015px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        #headerNo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            left : 10px;
+        }
+
+        #headerNo img {
+            margin-right: 10px;
+		    width: 40px;
+		    height: 40px;
+		    position: absolute;
+		    right: 10px;
+		    top: 10px;
+        }
+
+        #headerNo h2 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        #infoNo {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 14px;
+            left : 10px;
+        }
+
+        #insertBoard hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        #buttonsNo {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        #buttonsNo a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            color: #000;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        
+        #buttonsNo a:hover {
+            background-color: #ddd;
+        }
+
+        #contentNo {
+            min-height: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+
+
+
 footer{
     width: 100%; background-color: #fff;
 }

@@ -6,7 +6,6 @@
 	request.setCharacterEncoding("UTF-8");
 	
 	String title = request.getParameter("title");
-	String writer = request.getParameter("writer");
 	String content = request.getParameter("content");
 
 	BoardDAO dao = new BoardDAO();

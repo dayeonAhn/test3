@@ -14,12 +14,12 @@ public class BoardDAO {
 	@Autowired
 	private SqlSessionTemplate mybatis;
 	
-	public List<BoardVO> BoardList(Map<String, Object> params){
+	public List<BoardVO> getBoardList(BoardVO vo){
 		System.out.println("==> Mybatis로 getBoardList() 기능처리");
-		return mybatis.selectList("BoardDAO.BoardList", params);
+		return mybatis.selectList("BoardDAO.BoardList", vo);
 	}
 	
-	public BoardVO ComBoard (BoardVO vo ) {
+	public BoardVO getBoard (BoardVO vo ) {
 		System.out.println("==> Mybatis로 Board() 기능처리");
 		return mybatis.selectOne("BoardDAO.Board", vo);
 	}
